@@ -143,7 +143,7 @@ $objMailTemplate = New myClasses\MailTemplate($objEntry);
 
 /**
  * Email-Bestätigungs-Email versenden...
- */         
+ */
 $objMailer = New myClasses\Mailer($objMailTemplate);
 //wenn email schon einmal bestätigt wurde, dann muss nicht nocheinmal Bestätigungslink vers. werden...
 if($objMailer->objEmail->hasEntries() == false){
@@ -175,5 +175,6 @@ if($objMailer->objEmail->hasEntries() == false){
             die();   
     };
 };
-
+header("Location: index.php?noticode=6");
+die();
 ?>

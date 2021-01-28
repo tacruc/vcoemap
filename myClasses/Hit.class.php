@@ -127,6 +127,7 @@ class Hit{
             $strSQL = "select bezirke.bezirk, borders.bl, borders.st, kg.gemeindename, borders.gkz from borders left join katastralgemeinden kg on borders.kg_nr = kg.kg_nr left join bezirke on borders.bkz = bezirke.bkz where ST_contains(shape, point(" . $this->lnglat . "))";      
 
             $arr = $vcoe->BordersArrayFromDB($strSQL);
+
             $this->bezirk = $arr[0][0];
             $this->bundesland = $arr[0][1];
             $this->staat = $arr[0][2];
@@ -145,7 +146,6 @@ class Hit{
             $arr = $vcoe->PlzArrayFromDB($strSQL);
 
             $this->plz_suggestions = $arr;
-            // var_dump('nix!');
         }
 
     }

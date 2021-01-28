@@ -259,9 +259,11 @@ include("./includes/header.php");
             case 'Problemstelle Radfahren':
                 iconurl = 'images/biking.svg';
                 iconsize = 32;
+                break;
             case 'Problemstelle Gehen':
                 iconurl = 'images/walking.svg';
-                iconsize = 32;         
+                iconsize = 32;
+                break;
             case 'Sonstiges':
                 iconurl = 'images/exclamation.svg';
                 iconsize = 32;

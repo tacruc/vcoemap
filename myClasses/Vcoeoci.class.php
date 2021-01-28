@@ -72,7 +72,6 @@ class Vcoeoci{
         $arr = [];
 
         foreach ($this->conn->query($query) as $row) {
-        
             $marker = [
                 $row['bezirk'],
                 $row['bl'], 
@@ -90,7 +89,7 @@ class Vcoeoci{
     }
 
     Public Function PlzArrayFromDB($query) : array{
-
+        $arr = [];
         foreach ($this->conn->query($query) as $row) {
 
         $arr[] = $row['plz'];
