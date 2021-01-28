@@ -120,7 +120,7 @@ if(key_exists("watchthispix", $_FILES) && strlen($_FILES["watchthispix"]["name"]
     $configs = include('config.php');
 
     if($configs['env']=='dev'){
-        $uploadurl = 'http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['REQUEST_URI']).'/'.$newfilename;
+        $uploadurl = rtrim('https://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['REQUEST_URI']),"/").'/'.$newfilename;
     }else{
         $uploadurl = $newfilename;
     }
