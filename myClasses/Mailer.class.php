@@ -52,7 +52,7 @@ class Mailer{
                 ->setTo($this->objEmail->get_To())
                 ->setSubject($this->objEmail->get_Subject());
 
-                $image = $message->embed((new \Swift_Image())->fromPath('images/vcoe_logo_newsletter.png'));
+                $image = $message->embed((new \Swift_Image())->fromPath('images/LOGO_RL_TIROL_RGB_B.png'));
                 $link = $this->objEmail->link;
 
 //auch wenn das mein ganzes Konzept über den Haufen wirft...(das wollte ich an dieser Stelle nicht haben...)
