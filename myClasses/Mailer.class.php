@@ -253,12 +253,12 @@ HEREDOC;
                 ->setTo([$email_to])
                 ->setSubject('Neuer Eintag in VCOE-Kartentool - please check!');
 
-                $logo = $message->embed((new \Swift_Image())->fromPath('images/vcoe_logo_newsletter.png'));
+                $logo = $message->embed((new \Swift_Image())->fromPath('images/LOGO_RL_TIROL_RGB_B.png'));
                 
                 if(strlen($uploadurl) > 0){
                     $image = $message->embed((new \Swift_Image())->fromPath($uploadurl));
                 }else{
-                    $image = $message->embed((new \Swift_Image())->fromPath('images/vcoe_logo_newsletter.png'));
+                    $image = $message->embed((new \Swift_Image())->fromPath('images/LOGO_RL_TIROL_RGB_B.png'));
                 }
 
                 $html = <<<HEREDOC
