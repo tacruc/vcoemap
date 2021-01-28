@@ -10,7 +10,7 @@
                 
                 <section class="collapse navbar-collapse" id="myTogglerNav">
                     <div class="navbar-nav ml-auto">
-                        <!-- <a class="nav-item nav-link" href="/leaflet2020">karte</a> -->
+                        <!-- <a class="nav-item nav-link" href="">karte</a> -->
                         <a class="nav-item nav-link" href="about.php">about</a>
                         <a class="nav-item nav-link" href="hilfe.php">hilfe</a>
                         <a class="nav-item nav-link" href="about_vcoe.php">über den Vcö</a>

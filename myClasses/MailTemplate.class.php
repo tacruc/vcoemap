@@ -25,10 +25,10 @@ class MailTemplate extends Mail{
         //auch wenn ev. im Konstruktor von Email nix passiert... (vielleicht ja später...)
         parent::__construct();
 
-        //$link = $_SERVER('HOST_NAME') . "/leaflet2020/$hashed_email";
+        //$link = $_SERVER('HOST_NAME') . "/$hashed_email";
         
         if($this->configs['env']=='dev'){
-            $this->link = 'https://' . $_SERVER['SERVER_NAME'] . '/leaflet2020/confirm.php?hsh=' . 
+            $this->link = 'https://' . $_SERVER['SERVER_NAME'] . '/confirm.php?hsh=' .
             $objEntry->get_hashedEmail();
         }else{
             $this->link = 'https://' . $_SERVER['SERVER_NAME'] . '/confirm.php?hsh=' . 

@@ -49,7 +49,7 @@ class Entry{
     private function set_linkDelete(){
 
         if($this->configs['env']=='dev'){
-            $this->linkDelete = 'http://' . $_SERVER['SERVER_NAME'] . '/leaflet2020/block.php?hsh=' . $this->get_hashedEmail() . '&entryid=' . $this->get_entryid();
+            $this->linkDelete = 'http://' . $_SERVER['SERVER_NAME'] . '/block.php?hsh=' . $this->get_hashedEmail() . '&entryid=' . $this->get_entryid();
         }else{
             $this->linkDelete = 'http://' . $_SERVER['SERVER_NAME'] . '/block.php?hsh=' . $this->get_hashedEmail() . '&entryid=' . $this->get_entryid();    
         }
